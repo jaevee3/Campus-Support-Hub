@@ -1,1 +1,69 @@
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
 
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Styles for the header */
+header {
+    background-color: #f8f8f8;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+}
+
+/* Styles for the content section */
+section {
+    padding: 20px;
+    background-color: #eee;
+}
+
+section p {
+    color: #666;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Styles for the footer and form */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer form {
+    margin-top: 15px;
+}
+
+footer input[type="text"],
+footer input[type="email"] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+footer button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
