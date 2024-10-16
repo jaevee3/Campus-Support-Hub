@@ -1,3 +1,4 @@
+/* Base Styles */
 nav {
     background-color: #333;
     color: white;
@@ -19,7 +20,10 @@ nav a {
     color: white;
 }
 
-/* Styles for the header */
+nav a:hover {
+    background-color: #555;
+}
+
 header {
     background-color: #f8f8f8;
     padding: 20px 10px;
@@ -30,7 +34,6 @@ header h1 {
     color: #333;
 }
 
-/* Styles for the content section */
 section {
     padding: 20px;
     background-color: #eee;
@@ -42,7 +45,11 @@ section p {
     line-height: 1.6;
 }
 
-/* Styles for the footer and form */
+section a {
+    color: dodgerblue;
+    text-decoration: underline;
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -52,18 +59,39 @@ footer {
 
 footer form {
     margin-top: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 footer input[type="text"],
-footer input[type="email"] {
+footer input[type="email"],
+footer button {
+    width: 100%;
     padding: 10px;
-    margin-right: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
 }
 
 footer button {
-    padding: 10px 20px;
     background-color: dodgerblue;
     color: white;
     border: none;
     cursor: pointer;
+}
+
+/* Media Query for Devices with Max Width of 480px */
+@media (max-width: 480px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    section img {
+        max-width: 100%;
+        height: auto;
+    }
 }
