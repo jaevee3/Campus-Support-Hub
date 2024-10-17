@@ -73,27 +73,33 @@ nav a:hover {
 /* Content Section */
 .content-section {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin: 30px auto;
     width: 90%;
+    flex-wrap: wrap; /* To ensure content stacks on smaller screens */
 }
 
 .content-box {
     background-color: #d3d3d3;
-    width: 30%;
+    width: 30%; /* Width for three columns */
+    min-width: 250px; /* Ensures boxes don’t get too small on small screens */
     height: 200px;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between rows */
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
     color: white;
+    text-align: center;
+    padding: 20px;
     margin-top: 20px;
 }
 
