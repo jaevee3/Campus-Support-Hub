@@ -20,11 +20,11 @@
     <!-- Navigation Menu -->
     <nav>
         <ul>
-            <li><a href="#academic">Academic Support</a></li>
-            <li><a href="#mental-health">Mental Health Resources</a></li>
-            <li><a href="#financial">Financial Planning</a></li>
-            <li><a href="#community">Community Forum</a></li>
-            <li><a href="#about">About & Contact</a></li>
+            <li><a href="#" onclick="openTab(event, 'academic')">Academic Support</a></li>
+            <li><a href="#" onclick="openTab(event, 'mental-health')">Mental Health Resources</a></li>
+            <li><a href="#" onclick="openTab(event, 'financial')">Financial Planning</a></li>
+            <li><a href="#" onclick="openTab(event, 'community')">Community Forum</a></li>
+            <li><a href="#" onclick="openTab(event, 'about')">About & Contact</a></li>
         </ul>
     </nav>
 
@@ -33,40 +33,30 @@
         <p>This is the banner area with additional content or an image.</p>
     </div>
 
-    <!-- Content Sections -->
-    <div id="academic" class="content-section">
-        <div class="content-box">
-            <h2>Academic Support</h2>
-            <p>Details about academic support services here...</p>
-        </div>
+    <!-- Content Sections (Initially Hidden) -->
+    <div id="academic" class="tab-content" style="display: none;">
+        <h2>Academic Support</h2>
+        <p>Details about academic support services here...</p>
     </div>
 
-    <div id="mental-health" class="content-section">
-        <div class="content-box">
-            <h2>Mental Health Resources</h2>
-            <p>Details about mental health resources here...</p>
-        </div>
+    <div id="mental-health" class="tab-content" style="display: none;">
+        <h2>Mental Health Resources</h2>
+        <p>Details about mental health resources here...</p>
     </div>
 
-    <div id="financial" class="content-section">
-        <div class="content-box">
-            <h2>Financial Planning</h2>
-            <p>Details about financial planning here...</p>
-        </div>
+    <div id="financial" class="tab-content" style="display: none;">
+        <h2>Financial Planning</h2>
+        <p>Details about financial planning here...</p>
     </div>
 
-    <div id="community" class="content-section">
-        <div class="content-box">
-            <h2>Community Forum</h2>
-            <p>Details about the community forum here...</p>
-        </div>
+    <div id="community" class="tab-content" style="display: none;">
+        <h2>Community Forum</h2>
+        <p>Details about the community forum here...</p>
     </div>
 
-    <div id="about" class="content-section">
-        <div class="content-box">
-            <h2>About & Contact</h2>
-            <p>Contact information and details about us here...</p>
-        </div>
+    <div id="about" class="tab-content" style="display: none;">
+        <h2>About & Contact</h2>
+        <p>Contact information and details about us here...</p>
     </div>
 
     <footer>
