@@ -1,16 +1,18 @@
-/* General Body Styles */
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
 }
 
-/* Navigation Bar Styles */
-nav {
-    background-color: #2c3e50; /* Dark blue for contrast */
-    color: white;
-    padding: 15px 10px;
+header {
+    background-color: #f1f1f1;
+    padding: 20px;
     text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
 }
 
 nav ul {
@@ -20,67 +22,38 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
-    margin-right: 20px;
+    display: inline;
+    margin-right: 10px;
 }
 
 nav a {
     text-decoration: none;
-    color: white;
-    padding: 8px 15px;
-    font-size: 16px;
-}
-
-nav a:hover, nav a:focus {
-    background-color: #34495e; /* Slightly lighter blue for hover/focus */
+    color: #333;
+    padding: 8px;
+    background-color: #ddd;
     border-radius: 5px;
 }
 
-/* Header Styles */
-header {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
+main section {
+    border: 1px solid #ccc;
+    margin: 20px;
+    height: 200px; /* Adjust height based on content */
 }
 
-header h1 {
-    color: #2c3e50;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-}
-
-/* Section Styles */
-section {
-    border: 2px solid #bdc3c7;
-    margin: 20px 15px;
-    padding: 20px;
-    background-color: #ecf0f1;
-}
-
-/* Footer Styles */
 footer {
-    background-color: #2c3e50;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px;
-    font-size: 14px;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-/* Responsive Design Adjustments */
-@media (max-width: 768px) {
+/* Optional: Responsive Adjustments */
+@media (max-width: 600px) {
     nav ul li {
         display: block;
-        text-align: center;
-        margin: 10px 0;
-    }
-
-    header h1 {
-        font-size: 20px;
-    }
-
-    section {
-        margin: 10px;
-        padding: 10px;
+        margin-bottom: 10px;
     }
 }
