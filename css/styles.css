@@ -1,4 +1,4 @@
-/* Reset some default styling */
+/* General Reset */
 body, html {
     margin: 0;
     padding: 0;
@@ -56,7 +56,7 @@ nav a {
     font-weight: bold;
 }
 
-nav a:hover {
+nav a:hover, nav a.active {
     background-color: #ccc;
 }
 
@@ -70,28 +70,15 @@ nav a:hover {
     width: 80%;
 }
 
-/* Content Section */
-.content-section {
-    display: flex;
-    justify-content: space-between;
+/* Tab Content */
+.tab-content {
+    display: none;
     margin: 30px auto;
-    width: 90%;
-    flex-wrap: wrap; /* To ensure content stacks on smaller screens */
-}
-
-.content-box {
+    width: 80%;
+    padding: 20px;
     background-color: #d3d3d3;
-    width: 30%; /* Width for three columns */
-    min-width: 250px; /* Ensures boxes don’t get too small on small screens */
-    height: 200px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px; /* Space between rows */
 }
 
 /* Footer */
@@ -108,15 +95,5 @@ footer {
     nav ul {
         flex-direction: column;
         gap: 10px;
-    }
-
-    .content-section {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .content-box {
-        width: 80%;
-        margin-bottom: 20px;
     }
 }
