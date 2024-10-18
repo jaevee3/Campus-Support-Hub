@@ -139,7 +139,7 @@ footer {
 }
 
 .image-container img {
-    width: 100%;       /* Makes images fully occupy their container */
-    height: auto;      /* Adjusts height automatically to maintain aspect ratio */
+    width: 50%;       /* Makes images fully occupy their container */
+    height: 50%;      /* Adjusts height automatically to maintain aspect ratio */
     display: block;    /* Ensures no extra space is included within the container */
 }
