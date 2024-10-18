@@ -119,7 +119,7 @@ footer {
 }
 
 /* This styles the container that holds all the images */
-.images-row {
+.images-column {
     display: flex;     
     justify-content: center; 
     align-items: center; 
