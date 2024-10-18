@@ -1,23 +1,17 @@
-// Function to open specific tabs/sections
-function openTab(evt, tabName) {
-    // Hide all tab content elements
-    var tabcontent = document.getElementsByClassName("tab-content");
+function openTab(event, tabName) {
+    // Get all elements with class="tabcontent" and hide them
+    var tabcontent = document.getElementsByClassName("tabcontent");
     for (var i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
-    // Remove "active" class from all navigation links
-    var tablinks = document.querySelectorAll("nav ul li a");
-    tablinks.forEach(function(link) {
-        link.classList.remove("active");
-    });
-
-    // Display the clicked tab's content
-    var selectedTab = document.getElementById(tabName);
-    if (selectedTab) {
-        selectedTab.style.display = "block";
+    // Get all elements with class="tablinks" and remove the class "active"
+    var tablinks = document.getElementsByClassName("tablinks");
+    for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    // Add "active" class to the clicked link
-    evt.currentTarget.classList.add("active");
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(tabName).style.display = "block";
+    event.currentTarget.className += " active";
 }
