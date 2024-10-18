@@ -96,10 +96,6 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
-
-    .image-container {
-        flex: 0 0 100%; /* Full width for smaller screens */
-    }
 }
 
 @media (max-width: 480px) {
@@ -123,23 +119,20 @@ footer {
 }
 
 /* This styles the container that holds all the images */
-.images-column {
-    display: flex;     
-    justify-content: center; 
-    align-items: center; 
-    gap: 20px;         
-    flex-wrap: wrap; /* Allows wrapping as needed */
+.images-row {
+    display: flex;      /* Aligns children (image-container divs) in a row */
+    justify-content: center; /* Centers the children horizontally */
+    align-items: center; /* Centers the children vertically */
+    gap: 20px;         /* Adds space between the children */
 }
 
 /* This styles each individual image container */
 .image-container {
-    flex: 1 1 33%;     /* Each image container flexes but with a basis of 33% */
-    text-align: center; 
-    max-width: 33%;    /* Maximum width to enforce size */
+    flex: 0 0 33%;     /* Each image container takes up one-third of the images-row */
+    text-align: center; /* Centers the image within the container */
 }
 
 .image-container img {
-    width: 50%;       /* Makes images fully occupy their container */
-    height: 50%;      /* Adjusts height automatically to maintain aspect ratio */
-    display: block;    /* Ensures no extra space is included within the container */
+    max-width: 50%;   /* Makes images responsive */
+    height: auto;      /* Keeps the aspect ratio of the images */
 }
