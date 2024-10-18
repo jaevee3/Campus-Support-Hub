@@ -133,6 +133,6 @@ footer {
 }
 
 .image-container img {
-    max-width: 100%;   /* Makes images responsive */
-    height: 50%;      /* Keeps the aspect ratio of the images */
+    max-width: 10%;   /* Makes images responsive */
+    height: 10%;      /* Keeps the aspect ratio of the images */
 }
