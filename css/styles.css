@@ -96,6 +96,10 @@ footer {
         flex-direction: column;
         gap: 10px;
     }
+
+    .image-container {
+        flex: 0 0 100%; /* Full width for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -116,4 +120,26 @@ footer {
         display: flex;
         flex-direction: column;
     }
+}
+
+/* This styles the container that holds all the images */
+.images-column {
+    display: flex;     
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;         
+    flex-wrap: wrap; /* Allows wrapping as needed */
+}
+
+/* This styles each individual image container */
+.image-container {
+    flex: 1 1 33%;     /* Each image container flexes but with a basis of 33% */
+    text-align: center; 
+    max-width: 33%;    /* Maximum width to enforce size */
+}
+
+.image-container img {
+    width: 100%;       /* Makes images fully occupy their container */
+    height: auto;      /* Adjusts height automatically to maintain aspect ratio */
+    display: block;    /* Ensures no extra space is included within the container */
 }
