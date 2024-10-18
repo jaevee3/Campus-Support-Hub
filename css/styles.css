@@ -120,21 +120,21 @@ footer {
 
 /* This styles the container that holds all the images */
 .images-row {
-    display: flex;      /* Aligns children (image-container divs) in a row */
-    justify-content: center; /* Centers the children horizontally */
-    align-items: center; /* Centers the children vertically */
-    gap: 20px;         /* Adds space between the children */
+    display: flex;      
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px;         
 }
 
-/* This styles each individual image container */
+
 .image-container {
-    flex: 0 0 33%;     /* Each image container takes up one-third of the images-row */
-    text-align: center; /* Centers the image within the container */
-    padding: 10px; /* Optional: Adds padding inside each image container for spacing */
+    flex: 0 0 33%;     
+    text-align: center; 
+    padding: 10px; 
 }
 
 .image-container img {
-    max-width: 100%;   /* Ensures the image fills the container width */
-    height: auto;      /* Maintains the natural aspect ratio of the image */
-    display: block;    /* Removes additional space below the image */
+    max-width: 100%;   
+    height: auto;      
+    display: block;    
 }
